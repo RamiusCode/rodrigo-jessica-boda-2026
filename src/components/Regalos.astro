@@ -1,294 +1,178 @@
 ---
-// InvitationText.astro
+// MesaRegalos.astro
 ---
 
-<section class="relative w-full">
-  <!-- Contenedor del texto sin fondo de color -->
-  <div class="relative w-full px-3 py-8 md:py-20">
-    <!-- Flores decorativas en las esquinas superiores (sin animación) -->
-    <img
-      src="/imagenes/FlorIzquierda.png"
-      alt="Flor decorativa"
-      class="flor-izquierda absolute top-0 left-0 w-28 md:w-32 lg:w-40 h-auto z-20 opacity-0"
-    />
-    <img
-      src="/imagenes/FlorDerecha.png"
-      alt="Flor decorativa"
-      class="flor-derecha absolute top-0 right-0 w-28 md:w-32 lg:w-40 h-auto z-20 opacity-0"
-    />
+<section class="relative w-full md:py-20 px-6 overflow-hidden">
+  <!-- Flores decorativas IZQUIERDA -->
 
-    <!-- Todo el texto sobre la textura -->
-    <div class="relative z-10 max-w-4xl mx-auto text-center">
-      <!-- Primer párrafo -->
-      <p
-        class="texto-animado font-charm text-[#C8B38B] text-xl md:text-2xl leading-normal font-light px-4 mt-10 opacity-0"
-      >
-        Entre miradas, risas y<br> momentos compartidos, <br>nació un amor que hoy decide convertirse en una promesa para toda la vida
-      </p>
+  <div class="max-w-2xl mx-auto relative z-20">
+    <!-- Separador superior -->
+    <div class="separador-superior flex justify-center mb-8 opacity-0">
+      <img
+        src="/imagenes/separador2.png"
+        alt="Separador decorativo"
+        class="w-48 md:w-64 h-auto object-contain"
+      />
+    </div>
 
-      <!-- Divisor decorativo -->
-      <div
-        class="divisor-animado flex items-center justify-center gap-4 my-6 opacity-0"
-      >
-        <div class="h-px w-20 bg-gradient-to-r from-transparent to-[#C9A24D]">
-        </div>
-        <div class="w-2 h-2 rounded-full bg-[#C9A24D]"></div>
-        <div class="h-px w-20 bg-gradient-to-l from-transparent to-[#C9A24D]">
-        </div>
-      </div>
+    <!-- Título Principal -->
+    <div class="seccion-titulo text-center mb-4 opacity-0">
+      <h2 class="font-charm text-xl md:text-4xl text-[#C8A75A] font-bold mb-6">
+        Su presencia es lo más importante para nosotros.
+Si desean hacernos un regalo, pueden enviarlo a:
+      </h2>
 
-      <!-- Frase de bendición -->
-      <div class="mb-2">
-        <p
-          class="texto-animado font-charm text-xl md:text-3xl text-[#C9A24D] leading-relaxed px-4 opacity-0"
-        >
-          Con la bendición de Dios y de nuestros padres, uniremos nuestras vidas
-          en matrimonio
+      <!-- Dirección para regalos -->
+      <div class="mb-6">
+        <p class="font-charm text-xl md:text-2xl text-[#C8A75A] font-semibold">
+          Calle Cuba #1912, Miraflores
         </p>
       </div>
 
-      <!-- Divisor decorativo -->
-      <div
-        class="divisor-animado flex items-center justify-center gap-3 my-4 opacity-0"
+      <!-- Texto indicativo -->
+      <p class="font-charm text-lg md:text-xl text-[#C8B38B] mb-3">
+        👇 Haz click en el botón 👇
+      </p>
+
+      <!-- Botón Ubicación -->
+
+      <a
+        href="https://maps.app.goo.gl/gc4Qi57nrLtX1paL9"
+        target="_blank"
+        class="inline-flex
+      items-center justify-center gap-2 px-6 py-3 bg-[#C8A75A]
+      hover:bg-[#b89850] text-white rounded-full transition-all duration-300
+      hover:shadow-xl font-semibold text-base"
       >
-        <div class="h-px w-16 bg-[#C9A24D]"></div>
-        <svg
-          class="w-8 h-8 text-[#C9A24D]"
-          fill="currentColor"
-          viewBox="0 0 24 24"
-        >
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
           <path
-            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+            d="M21 2H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h7l-2 3v1h8v-1l-2-3h7c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 12H3V4h18v10z"
           ></path>
         </svg>
-        <div class="h-px w-16 bg-[#C9A24D]"></div>
-      </div>
+        <span>Ubicación</span>
+      </a>
+    </div>
 
-      <!-- Grid de padres -->
-      <div class="grid md:grid-cols-2 gap-6 md:gap-16 mt-6 px-4">
-        <!-- Padres del novio -->
-        <div class="padres-animado space-y-4 opacity-0">
-          <div class="mb-5">
-            <h3 class="font-charm text-2xl md:text-3xl text-[#C9A24D] mb-2">
-              Padres del novio
-            </h3>
-            <div class="h-px w-20 bg-[#d4af37] mx-auto"></div>
-          </div>
-          <p
-            class="font-charm text-xl text-[#C8B38B] font-light leading-relaxed"
-          >
-            Fernando Murillo Martínez
-          </p>
-          <p
-            class="font-charm text-xl text-[#C8B38B] font-light leading-relaxed"
-          >
-            Jenny Torrez A. de Murillo
-          </p>
-        </div>
+    <!-- Separador -->
+    <div
+      class="separador-2 flex items-center justify-center gap-3 my-10 opacity-0"
+    >
+      <div class="h-px w-16 bg-[#C8A75A]"></div>
+      <div class="w-2 h-2 rounded-full bg-[#C8A75A]"></div>
+      <div class="h-px w-16 bg-[#C8A75A]"></div>
+    </div>
 
-        <!-- Padres de la novia -->
-        <div class="padres-animado space-y-4 opacity-0">
-          <div class="mb-5">
-            <h3 class="font-charm text-2xl md:text-3xl text-[#C9A24D] mb-2">
-              Padres de la novia
-            </h3>
-            <div class="h-px w-20 bg-[#C9A24D] mx-auto"></div>
-          </div>
-          <p
-            class="font-charm text-xl text-[#C8B38B] font-light leading-relaxed"
-          >
-            Eduardo Chávez Montaño
-          </p>
-          <p
-            class="font-charm text-xl text-[#C8B38B] font-light leading-relaxed"
-          >
-            Silvia Torrez Flores
-          </p>
-        </div>
-      </div>
-
-      <!-- Divisor decorativo antes de padrinos -->
-      <div
-        class="divisor-animado flex items-center justify-center gap-3 my-8 opacity-0"
+    <!-- Mensaje romántico -->
+    <div class="seccion-mensaje text-center mb-4 opacity-0">
+      <p
+        class="font-charm text-2xl md:text-3xl text-[#C8B38B] leading-relaxed px-4"
       >
-        <div class="h-px w-20 bg-gradient-to-r from-transparent to-[#C9A24D]">
-        </div>
-        <div class="w-2 h-2 rounded-full bg-[#C9A24D]"></div>
-        <div class="h-px w-20 bg-gradient-to-l from-transparent to-[#C9A24D]">
-        </div>
-      </div>
+        Con amor, dejamos esta opción de regalo
+      </p>
+    </div>
 
-      <!-- Grid de padrinos -->
-      <div class="grid md:grid-cols-2 gap-6 md:gap-16 mt-6 px-4">
-        <!-- Padrinos de religión -->
-        <div class="padres-animado space-y-4 opacity-0">
-          <div class="mb-5">
-            <h3 class="font-charm text-2xl md:text-3xl text-[#C9A24D] mb-2">
-              Padrinos de religión
-            </h3>
-            <div class="h-px w-20 bg-[#d4af37] mx-auto"></div>
-          </div>
-          <p
-            class="font-charm text-xl text-[#C8B38B] font-light leading-relaxed"
-          >
-            Fernando Murillo Martínez
-          </p>
-          <p
-            class="font-charm text-xl text-[#C8B38B] font-light leading-relaxed"
-          >
-            Jenny Torrez A. de Murillo
-          </p>
-        </div>
-
-        <!-- Padrinos de civil -->
-        <div class="padres-animado space-y-4 opacity-0">
-          <div class="mb-5">
-            <h3 class="font-charm text-2xl md:text-3xl text-[#C9A24D] mb-2">
-              Padrinos de civil
-            </h3>
-            <div class="h-px w-20 bg-[#C9A24D] mx-auto"></div>
-          </div>
-          <p
-            class="font-charm text-xl text-[#C8B38B] font-light leading-relaxed"
-          >
-            Nelson Cordero Flores
-          </p>
-          <p
-            class="font-charm text-xl text-[#C8B38B] font-light leading-relaxed"
-          >
-            Miriam Tapia de Dueñas
-          </p>
+    <!-- QR Code Grande -->
+    <div class="seccion-qr text-center opacity-0">
+      <div class="flex justify-center">
+        <div class="bg-white p-2 rounded-3xl border-4 border-[#C8A75A]/30">
+          <img
+            src="/imagenes/QR5.png"
+            alt="Código QR Mesa de Regalos"
+            class="w-72 h-96 md:w-80 md:h-80 object-contain"
+          />
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Foto de los novios -->
-  <div class="w-full">
-    <img
-      src="/imagenes/m2.webp"
-      alt="Jessica y Rodrigo"
-      class="foto-animada w-full h-auto object-cover opacity-0"
-    />
-  </div>
-</section>
+  <style>
+    .font-charm {
+      font-family: "Charm", cursive !important;
+    }
 
-<style>
-  /* Para texto con Charm */
-  .font-charm {
-    font-family: "Charm", cursive !important;
-  }
+    p,
+    h2,
+    h3 {
+      text-shadow: 0 1px 2px rgba(255, 255, 255, 0.8);
+    }
+  </style>
 
-  /* Sombra suave para mejor legibilidad */
-  p,
-  h3 {
-    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.5);
-  }
-</style>
+  <script>
+    import { gsap } from "gsap";
+    import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-<script>
-  import { gsap } from "gsap";
-  import { ScrollTrigger } from "gsap/ScrollTrigger";
+    gsap.registerPlugin(ScrollTrigger);
 
-  gsap.registerPlugin(ScrollTrigger);
-
-  // Animación elegante de entrada para las flores con scroll
-  gsap.fromTo(
-    ".flor-izquierda",
-    {
-      opacity: 0,
-      x: -100,
-      rotation: -15,
-    },
-    {
-      opacity: 0.9,
-      x: 0,
-      rotation: 0,
-      duration: 1.8,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: ".flor-izquierda",
-        start: "top 90%",
-        toggleActions: "play none none none",
-      },
-    },
-  );
-
-  gsap.fromTo(
-    ".flor-derecha",
-    {
-      opacity: 0,
-      x: 100,
-      rotation: 15,
-    },
-    {
-      opacity: 0.9,
-      x: 0,
-      rotation: 0,
-      duration: 1.8,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: ".flor-derecha",
-        start: "top 90%",
-        toggleActions: "play none none none",
-      },
-    },
-  );
-
-  // Animación elegante de los textos desde abajo con fade (mismo tiempo)
-  const textosAnimados = document.querySelectorAll(".texto-animado");
-  textosAnimados.forEach((texto) => {
+    // Animación del separador superior
     gsap.fromTo(
-      texto,
+      ".separador-superior",
       {
         opacity: 0,
-        y: 60,
+        y: -30,
       },
       {
         opacity: 1,
         y: 0,
-        duration: 1.4,
+        duration: 1.2,
         ease: "power3.out",
         scrollTrigger: {
-          trigger: texto,
+          trigger: ".separador-superior",
           start: "top 85%",
           toggleActions: "play none none none",
         },
       },
     );
-  });
 
-  // Animación suave de los divisores solo con fade (sin rotación)
-  const divisores = document.querySelectorAll(".divisor-animado");
-  divisores.forEach((divisor) => {
+    // Animación de flores izquierda
     gsap.fromTo(
-      divisor,
+      ".flores-izq",
       {
         opacity: 0,
-        scale: 0.8,
+        x: -100,
+        rotation: -10,
       },
       {
         opacity: 1,
-        scale: 1,
-        duration: 1.2,
-        ease: "power2.out",
+        x: 0,
+        rotation: 0,
+        duration: 1.5,
+        ease: "power3.out",
         scrollTrigger: {
-          trigger: divisor,
+          trigger: ".flores-izq",
           start: "top 85%",
           toggleActions: "play none none none",
         },
       },
     );
-  });
 
-  // Animación elegante de las secciones de padres (mismo tiempo)
-  const padresAnimados = document.querySelectorAll(".padres-animado");
-  padresAnimados.forEach((padre) => {
+    // Animación de flores derecha
     gsap.fromTo(
-      padre,
+      ".flores-der",
       {
         opacity: 0,
-        y: 80,
+        x: 100,
+        rotation: 10,
+      },
+      {
+        opacity: 1,
+        x: 0,
+        rotation: 0,
+        duration: 1.5,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".flores-der",
+          start: "top 85%",
+          toggleActions: "play none none none",
+        },
+      },
+    );
+
+    // Animación de la sección título
+    gsap.fromTo(
+      ".seccion-titulo",
+      {
+        opacity: 0,
+        y: 60,
         scale: 0.95,
       },
       {
@@ -298,33 +182,93 @@
         duration: 1.3,
         ease: "power3.out",
         scrollTrigger: {
-          trigger: padre,
+          trigger: ".seccion-titulo",
           start: "top 80%",
           toggleActions: "play none none none",
         },
       },
     );
-  });
 
-  // Animación sofisticada de la foto con zoom suave
-  gsap.fromTo(
-    ".foto-animada",
-    {
-      opacity: 0,
-      scale: 1.1,
-      y: 50,
-    },
-    {
-      opacity: 1,
-      scale: 1,
-      y: 0,
-      duration: 1.8,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: ".foto-animada",
-        start: "top 80%",
-        toggleActions: "play none none none",
+    // Animación separador 1
+    gsap.fromTo(
+      ".separador-1",
+      {
+        opacity: 0,
+        scale: 0.8,
       },
-    },
-  );
-</script>
+      {
+        opacity: 1,
+        scale: 1,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".separador-1",
+          start: "top 85%",
+          toggleActions: "play none none none",
+        },
+      },
+    );
+
+    // Animación del mensaje
+    gsap.fromTo(
+      ".seccion-mensaje",
+      {
+        opacity: 0,
+        y: 40,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1.2,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: ".seccion-mensaje",
+          start: "top 80%",
+          toggleActions: "play none none none",
+        },
+      },
+    );
+
+    // Animación separador 2
+    gsap.fromTo(
+      ".separador-2",
+      {
+        opacity: 0,
+        scale: 0.8,
+      },
+      {
+        opacity: 1,
+        scale: 1,
+        duration: 1,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: ".separador-2",
+          start: "top 85%",
+          toggleActions: "play none none none",
+        },
+      },
+    );
+
+    // Animación del QR con efecto especial
+    gsap.fromTo(
+      ".seccion-qr",
+      {
+        opacity: 0,
+        y: 60,
+        scale: 0.9,
+      },
+      {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 1.4,
+        ease: "back.out(1.2)",
+        scrollTrigger: {
+          trigger: ".seccion-qr",
+          start: "top 80%",
+          toggleActions: "play none none none",
+        },
+      },
+    );
+  </script>
+</section>
